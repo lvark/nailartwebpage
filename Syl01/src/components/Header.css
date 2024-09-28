@@ -1,0 +1,90 @@
+/* General para el header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2; /* Color de fondo */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Estilos del logo */
+.logo h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Navegación */
+.nav {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Ocultar el menú para pantallas pequeñas */
+.mobile-menu-icon {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Responsive: Menú hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px; /* Debajo del header */
+    right: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .nav.mobile .nav-links {
+    height: 180px; /* Ajusta la altura dependiendo del número de enlaces */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .nav {
+    text-align: center;
+  }
+}
