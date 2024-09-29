@@ -1,0 +1,63 @@
+.footer {
+  background: linear-gradient(90deg, #bb9bf0, #d93672); /* Gradiente horizontal de izquierda a derecha */
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+  
+  .footer-container {
+    display: flex; /* Usamos flexbox para alinear elementos */
+    justify-content: center; /* Centramos los elementos dentro del contenedor */
+    align-items: flex-start; /* Alineamos al inicio */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative; /* Permite que las redes sociales se alineen al extremo derecho */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+
+  }
+  
+  .footer-column {
+    flex: 1; /* Cada columna ocupará su espacio proporcional */
+    padding: 0 20px;
+    min-width: 200px; /* Define un ancho mínimo para las columnas */
+  
+  }
+  
+  .footer-address {
+    text-align: center; /* Centra la columna de dirección */
+  }
+  
+  .social-links {
+    position: absolute; /* Colocamos esta sección en posición absoluta */
+    right: 0; /* Alineamos al extremo derecho */
+  }
+  
+  .social-links a {
+    display: block;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center; /* Centra el texto del copyright */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .social-links {
+      position: static; /* Las redes sociales se alinean normalmente en pantallas pequeñas */
+      margin-top: 20px; /* Añadimos espacio entre las columnas */
+      text-align: center; /* Centra el texto de redes sociales */
+    }
+  }
+  

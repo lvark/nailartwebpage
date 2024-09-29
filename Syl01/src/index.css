@@ -4,7 +4,7 @@
  
 /*html,*/
  body {
- height: 5%;
+ height: 100%;
  margin: 0;
  padding: 0;
  background: rgba(187, 155, 240, 0.3) ;
@@ -12,4 +12,12 @@
 font-family: Montserrat, sans-serif;
 }
 
- 
+#root {
+  display: flex; /* Usar flexbox para el layout */
+  flex-direction: column; /* Colocar elementos en columna */
+  min-height: 100vh; /* Asegúrate de que el contenedor principal ocupe al menos toda la ventana */
+}
+
+.content {
+  flex: 1; /* Esto permitirá que el contenido ocupe el espacio disponible */
+}

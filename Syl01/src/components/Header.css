@@ -28,7 +28,7 @@ ul {
   padding: 0;
   overflow: hidden; 
   /*background-color: #bb9bf0;*/
-  background: rgba(187, 155, 240, 0.7) ;
+  background:   rgba(187, 155, 240, 0.7) ;
 }
 
 li {
@@ -47,7 +47,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #bb9bf0;
+  background-color: #d93672;  /* sombra  cuando paso el cursor por el link */
 }
 
  
@@ -59,8 +59,6 @@ li a:hover {
   flex-grow: 1;
   text-align: right;
   display: marker;
-   /* display: flex;    */      /* inicia menu navegacion desde el centro */ 
-  justify-content: center;
   color: #bb9bf0;
 }
 
@@ -77,8 +75,6 @@ li a:hover {
 
 .nav-links li {
   display: inline;
-   
-   
 }
 
 /* Estilos para los enlaces de navegación */
@@ -87,12 +83,10 @@ li a:hover {
   color: #bb9bf0;
   font-size: 1.1rem;
   transition: color 0.3s ease;
-   
-   
 }
 
 .nav-links a:hover {
-  color: #d93672;
+  color: #f8d9e0;
 }
 
 /* Ocultar el menú para pantallas pequeñas */
@@ -161,7 +155,7 @@ li a:hover {
 }
 
 .nav-links a:hover {
-  color: #d93672;
+  color: #f8d9e0; /* cambio color letras  */
 }
 
 /* Ocultar el menú para pantallas pequeñas */
