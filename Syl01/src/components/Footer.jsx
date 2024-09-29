@@ -24,10 +24,10 @@ const Footer = () => {
               <a href="https://www.instagram.com/syvinails" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="social-icon" /> Instagram
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.tiktok.com/@syvinails?_t=8q8Wchco6zt&_r=1" target="_blank" rel="noopener noreferrer">
               <FaTiktok  className="social-icon" /> Tiktok
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/573160966503" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp  className="social-icon" /> WhatsApp
             </a>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './NailArtist.css'; // Asegúrate de que la ruta sea correcta
-import nailartist from '../assets/FotoSyl.png'; // foto
+import nailartist from '../assets/chibi.png'; // foto
 
 
 const NailArtist = () => {
@@ -10,15 +10,26 @@ const NailArtist = () => {
       <div>
         <table className="tablasobremi"> 
         <tbody>
-              <tr>
-              <td className="celdita">
-              <div> <img src={nailartist} alt="Foto" className="my-image2" />
+          <tr>
+            <td className="celda1-1">
+              <div className="sale-container"> <img src={nailartist} alt="Foto" className="my-image" />
               </div>
             </td>
+           
             <td className="celdatexto1"> 
-             <div>
-             <h3 className="h3i">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h3>
-             </div>
+              <div>
+                <h3 className="h3i">Hola soy Sylvia!  
+                <p>
+                  Estudio Ingeniería y me encanta el Nail Art.  <br></br>
+                  <br></br>
+                   Amo la idea de que muchas personas con diferentes personalidades y estilos de vida puedan conectar por el gusto o el amor a tener unas uñas bonitas.
+                 <br></br><br></br>
+                  ¡Gracias por estar aqui! 
+                 Por hacer parte de este sueño.
+                  Me encantaría personalizar las uñas que complementen tu estilo!
+                </p>
+                </h3>
+              </div>     
             </td>
           </tr>
           
