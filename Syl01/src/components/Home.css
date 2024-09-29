@@ -41,6 +41,8 @@
 } 
 
 
+ 
+
 .celda{  /*Para que las imagenes del slider roten sin cambiar el tamaño de la tabla*/ 
   width: 50%; /* O el ancho que desees */
   max-width: 800px; /* Ajusta el tamaño máximo del slider */

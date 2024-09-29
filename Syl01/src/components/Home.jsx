@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css'; // Asegúrate de que la ruta sea correcta
 import promo1 from '../assets/sale.png'; // logo
-import stdio from '../assets/sttdio.png'; // publicidad
+import stdio from '../assets/stddio.png'; // publicidad
 import HomeSlider1 from './HomeSlider1'; // Importa el componente Slider
 import HomeSlider2 from './HomeSlider2';
  
