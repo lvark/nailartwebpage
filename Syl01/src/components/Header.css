@@ -9,7 +9,10 @@
   padding: 10px 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
+   
 }
+
+
 
 /* Estilos del logo */
 .logo h1 {
@@ -18,19 +21,19 @@
   margin: 0;
 }
 
- 
-
 ul {
   list-style-type: none;
+  display: flex; 
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden; 
   /*background-color: #bb9bf0;*/
   background: rgba(187, 155, 240, 0.7) ;
 }
 
 li {
   float: left;
+  
 }
 
 li a {
@@ -39,29 +42,43 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  
+  
 }
 
 li a:hover {
   background-color: #bb9bf0;
 }
 
+ 
+
 
 /* Navegación */
 .nav {
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
   flex-grow: 1;
   text-align: right;
+  display: marker;
+   /* display: flex;    */      /* inicia menu navegacion desde el centro */ 
+  justify-content: center;
+  color: #bb9bf0;
 }
 
 .nav-links {
+
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   gap: 15px;
+  justify-content: center; /* centra el texto de la barra de navegacion */ 
+  
 }
 
 .nav-links li {
   display: inline;
+   
+   
 }
 
 /* Estilos para los enlaces de navegación */
@@ -70,6 +87,8 @@ li a:hover {
   color: #bb9bf0;
   font-size: 1.1rem;
   transition: color 0.3s ease;
+   
+   
 }
 
 .nav-links a:hover {
@@ -107,7 +126,7 @@ li a:hover {
 
 /* Contenedor del logo */
 .logo-container {
-  text-align: right;
+  text-align: center;
   margin-top: 20px ;
   margin-right: 40px;
   margin-bottom: 10px;
@@ -125,10 +144,12 @@ li a:hover {
   margin: 0;
   display: flex;
   gap: 15px;
+  
 }
 
 .nav-links li {
   display: inline;
+  
 }
 
 /* Estilos para los enlaces de navegación */
@@ -170,18 +191,15 @@ li a:hover {
   }
 
   .nav.mobile .nav-links {
-    height: 340px; /* Ajusta la altura dependiendo del número de enlaces */
+    height: 410px; /* Ajusta la altura dependiendo del número de enlaces */
   }
 
   .nav-links li {
     margin: 10px 0;
   }
-
   .mobile-menu-icon {
     display: block;
   }
-
-
 
   .nav {
     text-align: center;
