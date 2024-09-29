@@ -16,6 +16,34 @@
   margin: 0;
 }
 
+ 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #bb9bf0;*/
+  background: rgba(187, 155, 240, 0.7) ;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #bb9bf0;
+}
+
+
 /* Navegación */
 .nav {
   flex-grow: 1;
@@ -37,13 +65,80 @@
 /* Estilos para los enlaces de navegación */
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #bb9bf0;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #007bff;
+  color: #d93672;
+}
+
+/* Ocultar el menú para pantallas pequeñas */
+.mobile-menu-icon {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  
+}
+
+/* General para el header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  #bb9bf0; /* Color de fondo */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Estilos del logo */
+.logo h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Contenedor del logo */
+.logo-container {
+  text-align: right;
+  margin-top: 20px ;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+/* Navegación */
+.nav {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d93672;
 }
 
 /* Ocultar el menú para pantallas pequeñas */
@@ -60,9 +155,9 @@
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
-    top: 60px; /* Debajo del header */
+    top: 100px; /* Debajo del header */
     right: 0;
-    background-color: #f2f2f2;
+    background-color:  #bb9bf0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -73,7 +168,7 @@
   }
 
   .nav.mobile .nav-links {
-    height: 180px; /* Ajusta la altura dependiendo del número de enlaces */
+    height: 340px; /* Ajusta la altura dependiendo del número de enlaces */
   }
 
   .nav-links li {
