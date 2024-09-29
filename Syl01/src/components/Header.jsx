@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+ 
 import './Header.css';
 import logo from '../assets/logo.png'; // logo
 
@@ -17,7 +18,7 @@ function Header() {
 
       {/* Barra de navegación */}
       <nav className={isMobile ? "nav mobile" : "nav"}>
-        <ul className="nav-links"> 
+        <ul className="nav-links">
           <li><Link to="/">INICIO</Link></li>
           <li><Link to="/store">TIENDA</Link></li>
           <li><Link to="/schedule">AGENDA</Link></li>
@@ -33,4 +34,5 @@ function Header() {
     </header>
   );
 }
+
 export default Header;

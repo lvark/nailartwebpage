@@ -7,6 +7,7 @@ import Schedule from './components/Schedule';
 import Contact from './components/Contact';
 import Faq from './components/Faq';
 import Policies from './components/Policies';
+
 import Footer from './components/Footer'; // Importa el Footer
 
 
@@ -25,7 +26,7 @@ function App() {
         <Route path="/policies" element={<Policies />} />
       </Routes>
       </div>
-      <Footer /> {/* Agrega el Footer aquí */} 
+      <Footer /> {/*  el Footer aquí */} 
       </div>
     </Router>
   );

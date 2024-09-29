@@ -1,0 +1,15 @@
+.slider1 {
+  width: 100%; /* O el ancho que desees */
+  max-width: 1200px; /* Ajusta el tamaño máximo del slider */
+  height: 700px; /* Altura fija para el slider */
+  overflow: hidden; /* Asegúrate de que no se muestren imágenes fuera del contenedor */
+  position: relative; /* Para posicionar elementos internos */
+}
+
+.slider-image1 {
+  width: 100%;
+  height: 700px;
+  display: block;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+  transition: opacity 0.5s ease-in-out; /* Añade una transición suave */
+}

@@ -1,19 +1,68 @@
-.home {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente (si el contenedor tiene altura fija o dinámica) */
-    min-height: 50vh; /* Asegura que el contenedor ocupa al menos el 100% de la altura de la ventana */
-    text-align: center; /* Centra el texto horizontalmente dentro del contenedor */
-    padding: 20px;
-    box-sizing: border-box; /* Incluye el padding en el ancho y alto total del contenedor */
-  }
-  
-  .home-image {
-    max-width: 100%; /* Ajusta la imagen para que no exceda el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-top: 50px; /* Crea un espacio entre el texto y la imagen */
-  }
-  
+.home-containerdescuentos {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 20px; /* Espacio interior */
+}
+
+
+.table-containerdescuentos {
+  max-width: auto; /* Ancho máximo de la tabla */
+  margin: 0 auto; /* Centra la tabla */
+  padding: 20px; /* Espacio interior */
+  display: flex;
+  justify-content: center; /* Centra la tabla horizontalmente */
+}
+
+.my-tabledescuentos {
+  border-collapse: collapse; /* Cambia a 'separate' para aplicar border-spacing */
+  border-spacing: 20px; /* Espacio entre columnas */
+  width: 50%; /* O el tamaño deseado */
+}
+
+.my-table td {
+  padding: 50px; /* Espacio interior de las celdas */
+  border: 20px solid #ccc; /* Borde para las celdas */
+  text-align: center; /* Centra el contenido en las celdas */
+}
  
+
+.sale-container {
+  display: center;
+  justify-content: center; /* Centra la imagen en el contenedor */
+}
+
+.my-image {
  
+  height: 700px; /* Mantiene la proporción de la imagen */
+  max-width: 100%; /* Evita que la imagen exceda el ancho del contenedor */
+} 
+
+
+.celda1-2{  /*Para que las imagenes del slider roten sin cambiar el tamaño de la tabla*/ 
+  width: 50%; /* O el ancho que desees */
+  max-width: 800px; /* Ajusta el tamaño máximo del slider */
+  height: 800px; /* Altura fija para el slider */
+  overflow: hidden; /* Asegúrate de que no se muestren imágenes fuera del contenedor */
+  position: relative; /* Para posicionar elementos internos */
+  object-fit: cover;
+} 
+.celda2-1{ /*Para que las imagenes del slider roten sin cambiar el tamaño de la tabla*/ 
+    width: 50%; /* O el ancho que desees */
+    max-width: 800px; /* Ajusta el tamaño máximo del slider */
+    height: 700px; /* Altura fija para el slider */
+    overflow: hidden; /* Asegúrate de que no se muestren imágenes fuera del contenedor */
+    position: relative; /* Para posicionar elementos internos */
+    object-fit: cover;
+}
+.celda2-2{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  color:#d93672;
+ }
