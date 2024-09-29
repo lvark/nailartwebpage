@@ -61,3 +61,13 @@
     }
   }
   
+  .nail-artist-link {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 20px; /* Espacio entre las redes sociales y el enlace del nail artist */
+  }
+  
+  .nail-artist-link:hover {
+    color: #f0c040; /* Cambia el color al pasar el cursor */
+  }

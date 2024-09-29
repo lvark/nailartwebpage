@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css'; // Asegúrate de que la ruta sea correcta
 import promo1 from '../assets/sale.png'; // logo
+import stdio from '../assets/sttdio.png'; // publicidad
 import HomeSlider1 from './HomeSlider1'; // Importa el componente Slider
 import HomeSlider2 from './HomeSlider2';
  
@@ -16,32 +17,28 @@ const Home = () => {
              </div>
             </td>
 
-            <td className="celda1-2">
+            <td className="celda">
               <div className="sale-container"> <HomeSlider2/>   
               </div>
             </td>
           </tr>
           <tr>
 
-            <td className="celda2-1"> 
+            <td className="celda"> 
              <div className="sale-container"> <HomeSlider1 />   
              </div>
             </td>
 
-            <td className="celda2-2">
-              <div> <h2> NAIL ART STUDIO</h2>
-              </div>
+            <td className="celda1-1"> 
+             <div className="sale-container"> <img src={stdio} alt="Salon Logo" className="my-image" />
+             </div>
             </td>
           </tr>
-          
-        </tbody>
+           </tbody>
       </table>
       
       {/* Otros contenidos de tu página */}
     </div>
-
-     
-
   );
 };
 

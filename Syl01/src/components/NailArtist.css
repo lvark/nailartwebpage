@@ -1,0 +1,42 @@
+.my-image2 {
+    height: 300px; /* Mantiene la proporción de la imagen */
+    width: 90%; /* O el ancho que desees */
+    border-top: 3px solid #bb9bf0; /* Borde superior */
+    border-bottom: 3px solid #bb9bf0; /* Borde inferior */
+    border-left: 3px solid #bb9bf0; /* Borde superior */
+    border-right: 3px solid #bb9bf0; /* Borde inferior */
+   } 
+
+.tablasobremi{
+  max-width: auto; /* Ancho máximo de la tabla */
+  margin: 0 auto; /* Centra la tabla */
+  padding: 10px; /* Espacio interior */
+  display: flex;
+  justify-content: center; /* Centra la tabla horizontalmente */
+}
+
+.celdatexto1{
+   
+    display: flex;
+    justify-content: center;
+    color:#d93672;
+   }
+
+   .celdita{  /*la foto*/ 
+    width: 50%; /* O el ancho que desees */
+    max-width: auto; /* Ajusta el tamaño máximo del slider */
+    height: auto; /* Altura fija para el slider */
+    overflow: hidden; /* Asegúrate de que no se muestren imágenes fuera del contenedor */
+    position: relative; /* Para posicionar elementos internos */
+    object-fit: cover;
+  } 
+
+  .h3i{
+    color:black;
+    width: 500px;
+    height: 300px;
+    padding:10px;
+    vertical-align: middle;
+    text-align: center;
+    word-wrap: break-word; /* Permite que el texto se ajuste a varias líneas */
+}

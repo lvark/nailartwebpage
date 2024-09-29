@@ -7,6 +7,8 @@ import Schedule from './components/Schedule';
 import Contact from './components/Contact';
 import Faq from './components/Faq';
 import Policies from './components/Policies';
+import NailArtist from './components/NailArtist'; // Importa el componente de Nail Artist
+
 
 import Footer from './components/Footer'; // Importa el Footer
 
@@ -24,6 +26,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/policies" element={<Policies />} />
+        {/* Nueva ruta para la pestaña del Nail Artist */}
+        <Route path="/nail-artist" element={<NailArtist />} />
       </Routes>
       </div>
       <Footer /> {/*  el Footer aquí */} 

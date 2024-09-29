@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaWhatsapp , FaInstagram, FaTiktok   } from 'react-icons/fa'; // Importar íconos de React Icons
 import './Footer.css';
 
@@ -18,7 +19,9 @@ const Footer = () => {
         {/* Columna de Redes Sociales */}
         <div className="footer-column">
           <div className="social-links">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+            {/* Enlace a la pestaña de información sobre el nail artist */}
+            <Link to="/nail-artist" className="nail-artist-link">Sobre la Nail Artist</Link>
+              <a href="https://www.instagram.com/syvinails" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="social-icon" /> Instagram
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
@@ -27,6 +30,9 @@ const Footer = () => {
             <a href="#" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp  className="social-icon" /> WhatsApp
             </a>
+
+            
+
           </div>
         </div>
       </div>

@@ -41,7 +41,7 @@
 } 
 
 
-.celda1-2{  /*Para que las imagenes del slider roten sin cambiar el tamaño de la tabla*/ 
+.celda{  /*Para que las imagenes del slider roten sin cambiar el tamaño de la tabla*/ 
   width: 50%; /* O el ancho que desees */
   max-width: 800px; /* Ajusta el tamaño máximo del slider */
   height: 800px; /* Altura fija para el slider */
@@ -49,20 +49,44 @@
   position: relative; /* Para posicionar elementos internos */
   object-fit: cover;
 } 
-.celda2-1{ /*Para que las imagenes del slider roten sin cambiar el tamaño de la tabla*/ 
-    width: 50%; /* O el ancho que desees */
-    max-width: 800px; /* Ajusta el tamaño máximo del slider */
-    height: 700px; /* Altura fija para el slider */
-    overflow: hidden; /* Asegúrate de que no se muestren imágenes fuera del contenedor */
-    position: relative; /* Para posicionar elementos internos */
-    object-fit: cover;
-}
-.celda2-2{
-  list-style: none;
-  padding: 0;
+
+.celdatexto{
+
+  color:#d93672;
+  
+    width: 200px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    word-wrap: break-word; /* Permite que el texto se ajuste a varias líneas */
+  
+  
+ }
+
+ .texto{
+ 
+  padding: auto;
   margin: 0;
   display: flex;
   gap: 15px;
-  justify-content: center;
-  color:#d93672;
+  justify-content: left;
+  color:black;
+  text-align: center;
+  vertical-align: middle;
+  color:black;
+  padding:10px;
+  vertical-align: middle;
+  text-align: center;
+  word-wrap: break-word; /* Permite que el texto se ajuste a varias líneas */
+
  }
+
+.h3i{
+        color:black;
+        width: 500px;
+        height: 300px;
+        padding:10px;
+        vertical-align: middle;
+        text-align: center;
+        word-wrap: break-word; /* Permite que el texto se ajuste a varias líneas */
+  }

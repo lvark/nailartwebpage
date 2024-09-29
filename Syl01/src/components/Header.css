@@ -108,9 +108,10 @@ li a:hover {
 /* Contenedor del logo */
 .logo-container {
   text-align: center;
-  margin-top: 20px ;
-  margin-right: 40px;
+  margin-top: 10px ;
+  margin-right: 10px;
   margin-bottom: 10px;
+   
 }
 
 /* Navegación */
