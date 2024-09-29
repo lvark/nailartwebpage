@@ -19,7 +19,7 @@
    
     display: flex;
     justify-content: center;
-    color:#d93672;
+    border: 7px dotted #d98997;
    }
 
    .celdita{  /*la foto*/ 

@@ -25,7 +25,10 @@ const NailArtist = () => {
                    Amo la idea de que muchas personas con diferentes personalidades y estilos de vida puedan conectar por el gusto o el amor a tener unas uñas bonitas.
                  <br></br><br></br>
                   ¡Gracias por estar aqui! 
+                  <br></br>
                  Por hacer parte de este sueño.
+                 <br></br>
+                 <br></br>
                   Me encantaría personalizar las uñas que complementen tu estilo!
                 </p>
                 </h3>
