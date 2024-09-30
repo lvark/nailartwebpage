@@ -44,14 +44,7 @@ const TiendaVirtual = ({ productos, carrito, agregarAlCarrito, vaciarAlCarrito, 
        <tbody>
          {/* Primera fila con imágenes */}
          
-         <tr>
-           <td>1</td>
-           <td>2</td>
-           <td>3</td>
-           <td>4</td>
-           <td>5</td>
 
-         </tr>
 
          {/* Segunda fila con botones */}
          <tr>    

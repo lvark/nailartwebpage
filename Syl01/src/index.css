@@ -294,12 +294,17 @@ h1 {
 }
 
 .producto-imagenes {
+  max-width: 600px; 
+  height: auto; 
   flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
+  width: 100%;
+  
+ 
 }
 
 .producto-detalle {
@@ -500,7 +505,7 @@ h1 {
   width: 20%; /* Cada columna tendrá el 20% del ancho, asegurando que se distribuyan equitativamente */
   text-align: center; /* Centra el contenido dentro de las celdas */
   padding: 10px; /* Añade algo de espacio dentro de las celdas */
-  border: 1px solid #ccc; /* Opcional: Añade un borde alrededor de las celdas */
+  
 
   justify-content: center; /* Centra horizontalmente */
   
