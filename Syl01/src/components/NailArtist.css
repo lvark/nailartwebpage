@@ -23,10 +23,10 @@
    }
 
    .celdita{  /*la foto*/ 
-    width: 50%; /* O el ancho que desees */
+    width: 50%; /* ancho */
     max-width: auto; /* Ajusta el tamaño máximo del slider */
     height: auto; /* Altura fija para el slider */
-    overflow: hidden; /* Asegúrate de que no se muestren imágenes fuera del contenedor */
+    overflow: hidden; /* que la imagen no salga del contenedor */
     position: relative; /* Para posicionar elementos internos */
     object-fit: cover;
   } 

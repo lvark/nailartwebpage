@@ -42,9 +42,6 @@ li a:hover {
   background-color: #d93672;  /* sombra  cuando paso el cursor por el link */
 }
 
- 
-
-
 /* Navegación */
 .nav {
   width: 100%; /* Ocupa todo el ancho de la pantalla */
@@ -55,15 +52,13 @@ li a:hover {
 }
 
 .nav-links {
-
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   gap: 15px;
   justify-content: center; /* centra el texto de la barra de navegacion */ 
-  
-}
+  }
 
 .nav-links li {
   display: inline;
