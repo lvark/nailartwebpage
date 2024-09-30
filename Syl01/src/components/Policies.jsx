@@ -94,10 +94,10 @@ const Policies = () => {
         <tbody>
           <tr>
             <td className="left-column">
-              <button onClick={() => setSelectedPolicy('shipping')}>Tiempos de Envío</button>
-              <button onClick={() => setSelectedPolicy('appointments')}>Política Cancelación de Citas</button>
-              <button onClick={() => setSelectedPolicy('refunds')}>Política de Reembolsos Envíos</button>
-              <button onClick={() => setSelectedPolicy('privacy')}>Política de Privacidad</button>
+              <button className="boton-policies" onClick={() => setSelectedPolicy('shipping')}>Tiempos de Envío</button>
+              <button className="boton-policies" onClick={() => setSelectedPolicy('appointments')}>Política Cancelación de Citas</button>
+              <button className="boton-policies" onClick={() => setSelectedPolicy('refunds')}>Política de Reembolsos Envíos</button>
+              <button className="boton-policies" onClick={() => setSelectedPolicy('privacy')}>Política de Privacidad</button>
             </td>
             <td className="right-column">
               <div className="policy-content">

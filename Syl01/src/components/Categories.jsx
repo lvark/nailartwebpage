@@ -1,67 +1,59 @@
-import React  from 'react';
-import './Categories.css';
 
-
-
-
-function Categories() {
-  
-  
-
-  const categories = [
-    {
-      name: 'Tratamientos',
-      items: [
-        { name: 'Ozonoterapia Cuero Cabelludo', price: '$150.000' },
-        { name: 'Hidratación Intensiva', price: '$100.000' },
-      ],
-    },
-    {
-      name: 'Corte',
-      items: [
-
-        // 'Buzz', 'Punk', 'Pixie', 'Bob','Midi','Capas','Desfilada'
-        { name: 'Buzz', price: '$30' },
-        { name: 'Punk', price: '$50' },
-        { name: 'Pixie', price: '$20'},
-        { name: 'Bob', price: '$60' },
-        { name: 'Midi', price: '$40'},
-        { name: 'Capas', price: '$30'},
-        { name: 'Desfilada', price: '$15'},
-         
-      ],
-    },
-    {
-      name: 'Color',
-      items: [ 
-        { name: 'Tinte Completo', price: '$150.000' },
-        { name: 'Mechas', price: '$200.000' },
-        { name: 'Balayage', price: '$250.000' },
-      ],
-    },
-  ];
-
-  return (
-    <div className="services">
-      <h1>Nuestros Servicios</h1>
-      {categories.map((category, index) => (
-        <div key={index} className="service-category">
-          <h2>{category.name}</h2>
-          <div className="service-items">
-            {category.items.map((item, idx) => (
-              <div key={idx} className="service-item">
-                <span className="item-name">{item.name}</span>
-                <span className="item-price">{item.price}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      ))}
+   const tresd_CATEGORIA = (
+     <div>
+       <h3 className='paratitulos'> DISEÑOS 3D </h3>
+     </div>
+   );
+   
+   
+   const anime_CATEGORIA = (
+     <div>
+     <h3 className='paratitulos'> DISEÑOS ANIME Y MANGA </h3>
+   </div>
+   );
+   
+   
+   const knail_CATEGORIA = (
+     <div>
+     <h3 className='paratitulos'> DISEÑOS KOREAN NAILS </h3>
+   </div>
+   );
+   
+   const tendencia_CATEGORIA = (
+     <div>
+     <h3 className='paratitulos'> ESTILOS EN TENDENCIA </h3>
+   </div>
+   );
+ 
+   const accesorios_CATEGORIA = (
+      <div>
+       <h3 className='paratitulos'> ACCESORIOS </h3>
+     </div>
+   );
+   const extsoftgel_CATEGORIA = (
+     <div>
+      <h3 className='paratitulos'> EXTENSION CON SOFT GEL </h3>
     </div>
   );
-}
+ 
+  const semipermanente_CATEGORIA = (
+   <div>
+    <h3 className='paratitulos'> ESMALTADO SEMIPERMANENTE </h3>
+  </div>
+ );
+ 
+ 
+ 
+   const cattienda = {
+     knail: knail_CATEGORIA,
+     anime: anime_CATEGORIA,
+     tresd: tresd_CATEGORIA,
+     tendencia: tendencia_CATEGORIA,
+     accesorios: accesorios_CATEGORIA,
+     extsoftgel: extsoftgel_CATEGORIA,
+     semipermanente: semipermanente_CATEGORIA,
+   };
+ 
 
-
-
-
-export default Categories;
+export default cattienda;
+ 

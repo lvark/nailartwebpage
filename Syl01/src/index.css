@@ -143,6 +143,71 @@ h1 {
   color: white;
 }
 
+.boton-categoria {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  margin-top: 0.5rem;
+  background: #d93672;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  max-width: 200px; /* Ancho máximo  */
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Mayúsculas */
+  text-align: center;
+  
+}
+
+.boton-categoria:hover {
+  background-color: rgba(187, 155, 240) ;
+}
+
+
+.boton-servicios {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  margin-top: 0.5rem;
+  background: #d93672;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  max-width: auto; /* Ancho máximo  */
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Mayúsculas */
+  text-align: center;
+  
+}
+
+.boton-servicios:hover {
+  background-color: rgba(187, 155, 240) ;
+}
+
+.boton-policies {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  margin-top: 0.5rem;
+  background: rgba(187, 155, 240) ;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  max-width: 750px; /* Ancho máximo  */
+  
+}
+
+.boton-policies:hover {
+  background-color: #d93672;
+}
+
 /* Carrito */
 .carrito {
   margin-top: 2rem;
@@ -424,4 +489,51 @@ h1 {
   }
 }
 
+.cattienda-table {
+  width: 1200px; /* Ajusta esto según el ancho que desees */
+  margin: 0 auto; /* Centra la tabla */
+  border-collapse: collapse; /* Para que las celdas compartan bordes */
 
+}
+
+.cattienda-table td {
+  width: 20%; /* Cada columna tendrá el 20% del ancho, asegurando que se distribuyan equitativamente */
+  text-align: center; /* Centra el contenido dentro de las celdas */
+  padding: 10px; /* Añade algo de espacio dentro de las celdas */
+  border: 1px solid #ccc; /* Opcional: Añade un borde alrededor de las celdas */
+
+  justify-content: center; /* Centra horizontalmente */
+  
+}
+
+.cattienda-container {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.catservicios-table {
+  width: 1200px; /* Ajusta esto según el ancho que desees */
+  margin: 0 auto; /* Centra la tabla */
+  border-collapse: collapse; /* Para que las celdas compartan bordes */
+  
+}
+
+.catservicios-table td {
+  width: 20%; /* Cada columna tendrá el 20% del ancho, asegurando que se distribuyan equitativamente */
+  text-align: center; /* Centra el contenido dentro de las celdas */
+  padding: 10px; /* Añade algo de espacio dentro de las celdas */
+  border: 1px solid #ccc; /* Opcional: Añade un borde alrededor de las celdas */
+  
+}
+
+.catservicios-container {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto; /* Aplica margen automático a los lados para centrarlo */
+
+  
+}
+.CATEGORIA-content {
+  padding: 20px;
+}
