@@ -46,9 +46,10 @@ const Policies = () => {
   const SHIPPING_POLICY = (
     <div>
       <h3 className='paratitulos'>Tiempos de envio</h3>
-      <p>
+      <p><h3>Tiempos de elaboración</h3>
       Una vez el pedido sea aceptado entra a proceso de elaboración, este proceso puede tardar entre 2 y 3 semanas. 
       <br></br>Cuando tu pedido esté listo se llevará a la empresa transportadora.
+      <h3>Tiempos de envío</h3>
       Ten en cuenta que los tiempos de entrega por la empresa transportadora depende de la ciudad en que vivas. 
       <br></br><strong>Aclaración: </strong>  Se considera que el pedido es aceptado cuando el equipo de finanzas de SyviNails haya confirmado el pago, nosotros enviaremos un mensaje de confirmación al correo electrónico registrado cuando el pedido sea aceptado.
       </p>
