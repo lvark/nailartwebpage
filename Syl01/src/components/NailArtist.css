@@ -1,11 +1,4 @@
-.my-image2 {
-    height: 300px; /* Mantiene la proporción de la imagen */
-    width: 90%; /* O el ancho que desees */
-    border-top: 3px solid #bb9bf0; /* Borde superior */
-    border-bottom: 3px solid #bb9bf0; /* Borde inferior */
-    border-left: 3px solid #bb9bf0; /* Borde superior */
-    border-right: 3px solid #bb9bf0; /* Borde inferior */
-   } 
+
 
 .tablasobremi{
   max-width: auto; /* Ancho máximo de la tabla */
@@ -20,13 +13,13 @@
     display: flex;
     justify-content: center;
     border: 7px dotted #d98997;
+    
    }
 
    .celdita{  /*la foto*/ 
     width: 50%; /* ancho */
-    max-width: auto; /* Ajusta el tamaño máximo del slider */
-    height: auto; /* Altura fija para el slider */
-    overflow: hidden; /* que la imagen no salga del contenedor */
+    max-width: auto; /* Ajusta el tamaño máximo   */
+    height: auto; /* Altura fija  */
     position: relative; /* Para posicionar elementos internos */
     object-fit: cover;
   } 
@@ -35,8 +28,8 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color:black;
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 500px;
     padding:10px;
     text-align: center;
     word-wrap: break-word; /* Permite que el texto se ajuste a varias líneas */

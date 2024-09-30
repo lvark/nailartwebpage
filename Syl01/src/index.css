@@ -35,8 +35,21 @@ body {
   align-items: center;
 }
 
-.container {
+.container-tienda {
   padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color:black;
+  width: 800px;
+  height: auto;
+  gap: 20px; /* Espacio entre los productos */
+  padding:20px;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en filas nuevas si no caben horizontalmente */
+  text-align: center;
+  word-wrap: break-word; /* Permite que el texto se ajuste a varias líneas */
+  vertical-align: middle; /* Centra verticalmente */
+  overflow: hidden; /* Oculta el desbordamiento del contenido */
+
 }
 
 h1 {
@@ -87,29 +100,34 @@ h1 {
 }
 
 .producto-precio {
+  font-family: 'Montserrat', sans-serif;
   color: red;
 }
 
 .boton-agregar {
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   margin-top: 0.5rem;
-  background-color: #4299e1;
+  background: rgba(187, 155, 240) ;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   border: none;
   cursor: pointer;
+  max-width: 750px; /* Ancho máximo  */
+  
 }
 
 .boton-agregar:hover {
-  background-color: #3182ce;
+  background-color: #d93672;
 }
 
 .boton-eliminar {
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   border-color: white;
-  color: #e43721;
+  color: #d93672;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   border: none;
@@ -117,24 +135,32 @@ h1 {
 }
 
 .boton-eliminar:hover {
-  background-color: #e43721;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #d93672;
   color: white;
 }
 
 /* Carrito */
 .carrito {
   margin-top: 2rem;
+  border: 7px dotted #d98997; /*el borde del carrito de compras */
+  
 }
 
 .carrito h2 {
+  font-family: 'Montserrat', sans-serif;
+  color:#d93672;
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  
 }
 
 .carrito-resumen {
   display: flex;
   align-items: center;
+  
+
 }
 
 .carrito-icono {
@@ -143,6 +169,8 @@ h1 {
 
 .carrito-lista {
   margin-top: 0.5rem;
+  
+  
 }
 
 .carrito-item {
@@ -150,6 +178,21 @@ h1 {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
+  flex: 1 1 150px; /* Cada producto ocupa al menos 150px de ancho */
+  max-width: 300px; /* Ancho máximo para cada producto */
+  border: 1px solid #ccc; /* Borde para los productos */
+  padding: 20px;
+  text-align: left;
+  
+}
+
+.cart-container{   /* ESTE CONTAINER PARA LOS PRODUCTOS QUE APARECEN LISTADOS EN EL CARRITO DE COMPRAS*/ 
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en filas nuevas si no caben horizontalmente */
+  gap: 20px; /* Espacio entre los productos */
+  padding: 20px;
+  background: rgba(187, 155, 240, 0.3) ;
+  
 }
 
 .carrito-item-imagen {
@@ -158,11 +201,20 @@ h1 {
   object-fit: cover;
   border-radius: 0.25rem;
   margin-right: 0.5rem;
+
 }
 
 .carrito-total {
   margin-top: 0.5rem;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color:#d93672;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: right;
+  margin-right: 1rem;
+  
 }
 
 .producto-imagenes {
@@ -199,17 +251,21 @@ h1 {
 /* Estilos para el contenedor principal */
 .crear-producto {
   max-width: 800px;
-  min-width: 500px;
+  min-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background: rgba(187, 155, 240, 0.3);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(187, 155, 240, 0.7);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .crear-producto-info {
   display: flex;
   justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .crear-producto h2 {

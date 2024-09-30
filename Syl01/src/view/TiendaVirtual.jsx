@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProductCard from '../Components/ProductCard';
 import Nav from '../Components/Nav';
+import {FaShoppingCart} from 'react-icons/fa'; // Importar íconos de React Icons
 
 
 const TiendaVirtual = ({ productos, carrito, agregarAlCarrito, vaciarAlCarrito, eliminarDelCarrito }) => {
@@ -14,13 +15,12 @@ const TiendaVirtual = ({ productos, carrito, agregarAlCarrito, vaciarAlCarrito, 
     return (
         <div className='principal'>
             <Nav />
-            <div className="container">
-                <h1>Mi Tienda Virtual</h1>
-
+            <div className="container-tienda">
+             
                 <div >
                     <input
                         type="text"
-                        placeholder="Buscar productos..."
+                        placeholder="Buscar productos"
                         value={busqueda}
                         onChange={(e) => setBusqueda(e.target.value)}
                         className="buscador-input"
@@ -35,17 +35,18 @@ const TiendaVirtual = ({ productos, carrito, agregarAlCarrito, vaciarAlCarrito, 
                             onAgregarAlCarrito={agregarAlCarrito}
                         />
                     )) : (
-                        <p> No se encontraron registros </p>
+                        <p> No se encontro este producto </p>
                     )}
                 </div>
 
                 <div className="carrito">
-                    <h2>Carrito</h2>
+                    <FaShoppingCart size={30} color="#d93672" />
+                    <h2> TU CARRITO DE COMPRAS </h2>  
                     <div className="boton-agregar">
                         <span>{carrito.length} artículos</span>
                         <button className='boton-eliminar' onClick={vaciarAlCarrito}>Vaciar</button>
                     </div>
-                    <ul>
+                    <ul className="cart-container">
                         {carrito.map((item, index) => (
                             <div key={index} className="carrito-item">
                                 <img
@@ -59,7 +60,7 @@ const TiendaVirtual = ({ productos, carrito, agregarAlCarrito, vaciarAlCarrito, 
                         ))}
                     </ul>
                     <p className="carrito-total">
-                        Total: ${carrito.reduce((sum, item) => sum + item.precio, 0)}
+                        TOTAL: $ {carrito.reduce((sum, item) => sum + item.precio, 0)}
                     </p>
                 </div>
             </div>

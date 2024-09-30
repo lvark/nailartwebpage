@@ -9,11 +9,14 @@
 
 
 .table-containerdescuentos {
-  max-width: auto; /* Ancho máximo de la tabla */
+  
   margin: 0 auto; /* Centra la tabla */
   padding: 20px; /* Espacio interior */
   display: flex;
   justify-content: center; /* Centra la tabla horizontalmente */
+  max-width: 1600px; /* Evita que la tabla crezca demasiado en pantallas grandes */
+  table-layout: fixed; /* Hace que las columnas mantengan su tamaño */
+  border-collapse: collapse; /* Opcional: elimina el espacio entre celdas */
 }
 
 .my-tabledescuentos {
