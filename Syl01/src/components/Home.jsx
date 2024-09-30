@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css'; // Asegúrate de que la ruta sea correcta
 import promo1 from '../assets/sale.png'; // logo
 import stdio from '../assets/stddio.png'; // publicidad

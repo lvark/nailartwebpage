@@ -64,7 +64,7 @@ const CrearProducto = ({ productos, agregarProducto, editarProducto }) => {
             delete producto.imagen3;
             agregarProducto(nuevoProducto);
         }
-        navigate('/');
+        navigate('/tiendavirtual');
     };
     return (
         <div className="principal">

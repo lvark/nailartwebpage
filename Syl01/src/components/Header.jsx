@@ -20,8 +20,8 @@ function Header() {
       <nav className={isMobile ? "nav mobile" : "nav"}>
         <ul className="nav-links">
           <li><Link to="/">INICIO</Link></li>
-          <li><Link to="/store">TIENDA</Link></li>
-          <li><Link to="/schedule">AGENDA</Link></li>
+          <li><Link to="/tiendavirtual">TIENDA VIRTUAL</Link></li>
+          <li><Link to="/schedule">AGENDA TU CITA</Link></li>
           <li><Link to="/faq">DUDAS</Link></li>
           <li><Link to="/policies">POLITICAS</Link></li>
           <li><Link to="/contact">CONTACTO</Link></li>

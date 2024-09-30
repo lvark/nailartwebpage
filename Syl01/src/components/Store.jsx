@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+ 
 
 function Store() {
   return (
     <div>
       <h1> </h1>
       <p> TIENDA </p>
+
     </div>
   );
 }

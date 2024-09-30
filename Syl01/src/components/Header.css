@@ -135,10 +135,11 @@ li a:hover {
   color: #ffffff;
   font-size: 1.1rem;
   transition: color 0.3s ease;
+  font-weight: 500;
 }
 
 .nav-links a:hover {
-  color: #f8d9e0; /* cambio color letras  */
+  color: #f0c040; /* cambio color letras  */
 }
 
 /* Ocultar el menú para pantallas pequeñas */

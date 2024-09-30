@@ -8,7 +8,7 @@ const DetalleProducto = ({ productos, agregarAlCarrito }) => {
     const producto = productos.find(p => p.id === parseInt(id));
     const handleAgregarAlCarrito = () => {
         agregarAlCarrito(producto);
-        navigate('/');
+        navigate('/tiendavirtual');
     };
 
     return (
