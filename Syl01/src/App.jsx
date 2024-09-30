@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
-import Store from './components/Store';
 import Schedule from './components/Schedule';
 import Contact from './components/Contact';
 import Faq from './components/Faq';

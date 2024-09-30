@@ -313,7 +313,7 @@ h1 {
 /* Estilos para el botón de envío */
 .crear-producto button {
   padding: 10px 15px;
-  background-color: #4CAF50;
+  background: rgba(187, 155, 240) ;
   color: white;
   border: none;
   border-radius: 4px;
@@ -323,7 +323,7 @@ h1 {
 }
 
 .crear-producto button:hover {
-  background-color: #45a049;
+  background-color: #d93672;
 }
 
 /* Estilos para los campos cuando están en foco */
@@ -415,3 +415,5 @@ h1 {
     margin: 10px 0;
   }
 }
+
+

@@ -1,0 +1,75 @@
+.contact-container {
+    max-width: 600px;
+    margin: 70px auto; /* Agregar margen en la parte superior */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+    width: 100%; /* Asegura que el campo ocupe el 100% del ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #4caf50;
+    outline: none;
+}
+
+textarea {
+    resize: vertical; /* Permitir cambiar el tamaño verticalmente */
+    min-height: 100px; /* Establecer una altura mínima para el área de texto */
+}
+
+.botoncontacto {
+    padding: 12px;
+    background-color: rgba(187, 155, 240) ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botoncontacto:hover {
+    background-color: #d93672;
+}
+
+.botoncontacto:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
