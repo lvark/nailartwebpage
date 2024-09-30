@@ -22,7 +22,7 @@ function Header() {
           <li><Link to="/">INICIO</Link></li>
           <li><Link to="/tiendavirtual">TIENDA VIRTUAL</Link></li>
           <li><Link to="/schedule">AGENDA TU CITA</Link></li>
-          <li><Link to="/store">DUDAS</Link></li>
+          <li><Link to="/faq">DUDAS</Link></li>
           <li><Link to="/policies">POLITICAS</Link></li>
           <li><Link to="/contact">CONTACTO</Link></li>
         </ul>

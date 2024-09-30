@@ -155,7 +155,7 @@ h1 {
   cursor: pointer;
   max-width: 200px; /* Ancho máximo  */
   height: 50px;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: bold; /* Negrita */
   text-transform: uppercase; /* Mayúsculas */
   text-align: center;
@@ -490,7 +490,7 @@ h1 {
 }
 
 .cattienda-table {
-  width: 1200px; /* Ajusta esto según el ancho que desees */
+  width: 800px; /* Ajusta esto según el ancho que desees */
   margin: 0 auto; /* Centra la tabla */
   border-collapse: collapse; /* Para que las celdas compartan bordes */
 

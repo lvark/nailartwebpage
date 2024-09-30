@@ -5,16 +5,27 @@ import {FaShoppingCart} from 'react-icons/fa'; // Importar íconos de React Icon
 
 
 const TiendaVirtual = ({ productos, carrito, agregarAlCarrito, vaciarAlCarrito, eliminarDelCarrito }) => {
-
+  
     const [busqueda, setBusqueda] = useState('');
+    const [selectedCatt, setselectedCatt] = useState('knail');
 
-    const productosFiltrados = productos.filter(producto =>
-        producto.nombre.toLowerCase().includes(busqueda.toLowerCase())
-    );
+    const productosFiltrados = productos.filter(producto => {
+      const coincideConBusqueda = producto.nombre.toLowerCase().includes(busqueda.toLowerCase());
+    
+      // Si hay una búsqueda activa, ignoramos la categoría y filtramos por nombre
+      if (busqueda) {
+        return coincideConBusqueda;
+      }
+    
+      // Si no hay búsqueda, filtramos por la categoría seleccionada
+      return producto.categoria === selectedCatt;
+    });
+    
+    
 
     return (
         <div className='principal'>
-            <Nav />
+            {/*<Nav />*/}
             <div className="container-tienda">
              
                 <div >
@@ -26,6 +37,32 @@ const TiendaVirtual = ({ productos, carrito, agregarAlCarrito, vaciarAlCarrito, 
                         className="buscador-input"
                     />
                 </div>
+                
+                <h3 className='paratitulos'>Explora por categorías</h3>
+                <table className="cattienda-table">
+       
+       <tbody>
+         {/* Primera fila con imágenes */}
+         
+         <tr>
+           <td>1</td>
+           <td>2</td>
+           <td>3</td>
+           <td>4</td>
+           <td>5</td>
+
+         </tr>
+
+         {/* Segunda fila con botones */}
+         <tr>    
+           <td> <button className="boton-categoria" onClick={() => setselectedCatt('knail')}>Korean Nails</button> </td>
+           <td> <button className="boton-categoria" onClick={() => setselectedCatt('anime')}>Anime & Manga</button></td>
+           <td> <button className="boton-categoria" onClick={() => setselectedCatt('tresd')}>3D</button></td>
+           <td> <button className="boton-categoria" onClick={() => setselectedCatt('tendencia')}>Tendencias</button></td>
+           <td> <button className="boton-categoria" onClick={() => setselectedCatt('accesorios')}>Accesorios</button></td>
+         </tr>
+       </tbody>
+     </table>
 
                 <div className="productos-grid">
                     {productosFiltrados.length > 0 ? productosFiltrados.map((producto) => (

@@ -13,10 +13,10 @@ const DetalleProducto = ({ productos, agregarAlCarrito }) => {
 
     return (
         <div className="principal">
-            <Nav />
-            <div className="producto-detalle"> /* contiene la seccion de imagenes del producto y los detalles del producto */
+            {/*<Nav />*/}
+            <div className="producto-detalle"> {/* contiene la seccion de imagenes del producto y los detalles del producto */}
                 <div className="producto-imagenes">
-                    <img src={producto.imagen} alt="Producto" className="detalle-imagen" /> /* se muestra la imagen principal del producto*/
+                    <img src={producto.imagen} alt="Producto" className="detalle-imagen" /> {/* se muestra la imagen principal del producto*/}
                     {producto.imagenes.map((imagen) => (
                         <img src={imagen} alt="Producto" className="detalle-imagen" />
                     ))}
