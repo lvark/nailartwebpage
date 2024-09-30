@@ -1,0 +1,15 @@
+.tablacitas {
+  
+    margin: 0 auto; /* Centra la tabla */
+    padding: 20px; /* Espacio interior */
+    display: flex;
+    justify-content: center; /* Centra la tabla horizontalmente */
+    max-width: 800px; /* Evita que la tabla crezca demasiado en pantallas grandes */
+    table-layout: fixed; /* Hace que las columnas mantengan su tamaño */
+    border-collapse: collapse; /* Opcional: elimina el espacio entre celdas */
+    border: 20px solid #ccc; /* Borde para las celdas */
+    text-align: center; /* Centra el contenido en las celdas */
+  
+  }
+
+ 

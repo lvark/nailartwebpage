@@ -7,6 +7,7 @@ const Contact = () => {
         email: '',
         message: '',
     });
+    const [isPopupVisible, setPopupVisible] = useState(false); // Estado para el popup
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -20,12 +21,20 @@ const Contact = () => {
         e.preventDefault();
         // Aquí puedes manejar el envío del mensaje, como enviarlo a una API o a un servicio de backend.
         console.log('Mensaje enviado:', formData);
+        
+        // Mostrar el popup de confirmación
+        setPopupVisible(true);
+
         // Limpiar el formulario después de enviar
         setFormData({
             name: '',
             email: '',
             message: '',
         });
+    };
+
+    const handleClosePopup = () => {
+        setPopupVisible(false); // Ocultar el popup
     };
 
     return (
@@ -66,6 +75,20 @@ const Contact = () => {
                 </div>
                 <button className="botoncontacto" type="submit">Enviar Mensaje</button>
             </form>
+
+            {/* Popup de Confirmación */}
+            {isPopupVisible && (
+                <div className="popup">
+                    <div className="popup-content">
+                        <h3>¡Mensaje Enviado!</h3>
+                        <br></br>
+                        <p>Te daremos una respuesta lo más pronto posible al correo que ingresaste.</p>
+                        <br></br>
+                        <p>¡Ten un lindo dia!</p>
+                        <button onClick={handleClosePopup}>Cerrar</button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

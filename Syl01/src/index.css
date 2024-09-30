@@ -149,6 +149,14 @@ h1 {
   border: 7px dotted #d98997; /*el borde del carrito de compras */
   
 }
+.paratitulos{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color:#d93672;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 
 .carrito h2 {
   font-family: 'Montserrat', sans-serif;

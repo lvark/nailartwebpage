@@ -1,11 +1,18 @@
 import React from 'react';
+import './Schedule.css'; //  
 
 function Schedule() {
   return (
-    <div>
-      <h1>Agenda</h1>
-      <p>Aquí puedes agendar tu cita.</p>
-    </div>
+    <table className="tablacitas">
+      <tbody>
+        <tr>
+          <td className="infocita">INFORMACION SOBRE COMO FUNCIONAN LA RESERVA DE CITAS </td>
+        </tr>
+        <tr>
+          <td>FORMULARIO PARA AGENDAR LA CITA</td>
+        </tr>
+      </tbody>
+    </table>
   );
 }
 
