@@ -518,7 +518,7 @@ h1 {
 }
 
 .catservicios-table {
-  width: 1200px; /* Ajusta esto según el ancho que desees */
+  width: 800px; /* Ajusta esto según el ancho que desees */
   margin: 0 auto; /* Centra la tabla */
   border-collapse: collapse; /* Para que las celdas compartan bordes */
   
