@@ -5,6 +5,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    
 }
 
 .contact-container:hover {
@@ -13,7 +14,8 @@
 
 .contact-container h2 {
     text-align: center;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    color:#d93672;
     margin-bottom: 20px;
 }
 
@@ -24,6 +26,7 @@
 
 .form-group {
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .label {
@@ -73,3 +76,5 @@ textarea {
     background-color: #ccc;
     cursor: not-allowed;
 }
+
+ 
