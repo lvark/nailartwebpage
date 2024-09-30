@@ -17,6 +17,7 @@
   max-width: 1600px; /* Evita que la tabla crezca demasiado en pantallas grandes */
   table-layout: fixed; /* Hace que las columnas mantengan su tamaño */
   border-collapse: collapse; /* Opcional: elimina el espacio entre celdas */
+
 }
 
 .my-tabledescuentos {

@@ -96,12 +96,15 @@ h1 {
 
 .producto-nombre {
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color:#744fb1;
 }
 
 .producto-precio {
   font-family: 'Montserrat', sans-serif;
-  color: red;
+  color: #d93672;
+  font-weight: 700;
 }
 
 .boton-agregar {
@@ -364,15 +367,22 @@ h1 {
 .main-nav ul {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  
 }
 .main-nav {
-  background-color: #1a1a1a;
+  background-color: black;
   display: flex;
-  width: 100%;
+  width: 50%;
   flex-direction: column;
   justify-content: center;
   height: 50px;
   margin: 0;
+}
+
+.estilo-admin{
+  color: #ffffff; 
+  font-family: 'Montserrat', sans-serif;
 }
 .main-nav ul{
   display: flex;
